@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Picture Filter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <h1>Picture Filter</h1>
+  <label for="imageUpload" class="file-input-label">Choose Image</label>
+  <input type="file" id="imageUpload" accept="image/*">
+  <div id="filterOptions">
+    <label id="filter">
+      <input type="radio" name="filter" value="none" checked>
+      None
+    </label>
+    <label id="filter">
+      <input type="radio" name="filter" value="border">
+      Border
+    </label>
+    <label id="filter">
+      <input type="radio" name="filter" value="shadow">
+      Shadow
+    </label>
+    <label id="filter">
+      <input type="radio" name="filter" value="grayscale">
+      Grayscale
+    </label>
+    <label id="filter">
+      <input type="radio" name="filter" value="sepia">
+      Sepia
+    </label>
+    <label id="filter">
+      <input type="radio" name="filter" value="invert">
+      Invert
+    </label>
+  </div>
+  <div id="pictureContainer">
+    <img id="picture">
+  </div>
+  <a href="#" id="downloadLink" download="filtered_image.png">Download</a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

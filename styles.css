@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+  text-align: center;
+  padding: 20px;
+  background-color: #10316b;
+}
+
+h1 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #eac100;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #dee1ec;
+  color: #095f3e;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  margin-block-end: 10px;
+}
+
+.file-input-label:hover {
+  background-color: #0a6c47;
+  color: #eac100;
+}
+
+.file-input-label:active {
+  background-color: #095f3e;
+  color: #eac100;
+}
+
+.file-input-label input[type="file"] {
+  display: none;
+}
+
+
+#filterOptions {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+#filter {
+  font-size: 25px;
+  color: white;
+}
+
+input[type="radio"] {
+  accent-color: black;
+}
+
+#pictureContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+#picture {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.filter-border {
+  border: 10px double black;
+}
+
+.filter-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+.filter-sepia {
+  filter: sepia(100%);
+}
+
+.filter-invert {
+  filter: invert(100%);
+}
+
+#downloadLink {
+  display: none;
+  margin: auto;
+  margin-top: 20px;
+  color: black;
+  background-color: #eac100;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 85%;
+  max-width: 100%;
+
+
+  transition: all ease 250ms;
+}
+
+#downloadLink:hover {
+  transform: translateY(-5px);
+  background-color: #0b8457;
+  box-shadow: 0 10px 20px -5px black;
+}
